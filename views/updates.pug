@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title=`${title}`
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            h1 Add a new Pet
+            form(method="POST")
+                label(for="name") Pet Name
+                input(type="text" name="name" required)
+                label(for="age") Pet Age
+                input(type="number" name="age" required)
+                label(for="color") Pet Color
+                input(type="text" name="color" required)
+                input(type="submit" value="Submit")
+        a(href='/') Return to the homepage
